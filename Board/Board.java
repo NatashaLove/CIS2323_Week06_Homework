@@ -7,15 +7,18 @@ import CheckerPiece.*;
 
 public class Board {
 	
-	// //global variables
-	 
-	// // ChessBoard[][] board = new ChessBoard[8][8]; //to show game status in text based version
+	//global variables
+	// row and column for position on the board
+	private int column; 
+	private int row;
+	Board[][] board = new Board[8][8]; 
 	// ChessPiece[][] board = new ChessPiece[8][8];
 	// ArrayList<ChessPiece> pieces = new ArrayList<ChessPiece>(32); //create 32 pieces, 16 for both players
 	
 	// // Default constructor.
 	public Board() {
 	}
+	
 	// // Constructor.
 	// public ChessBoard() {
 		// initBoard(); //places pieces on the board 

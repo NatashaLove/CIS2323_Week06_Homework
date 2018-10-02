@@ -3,10 +3,7 @@ import Board.*;
 import java.util.*;
 
 public class CheckerPiece {
-	//global variables
-	// row and column for position on the board
-	private int column; 
-	private int row;
+	
 	
 	//Enum for the pieces in the game
 	enum Piece{
@@ -53,9 +50,7 @@ public class CheckerPiece {
 		 */
 		Piece[][] board = new Piece[8][8];
 		
-		//Default empty constructor 
-		public Board(){	
-		}
+		
 		
 		//Initializes the board with starting set up
 		public void init(){
@@ -121,72 +116,6 @@ public class CheckerPiece {
 		}
 
 	
-	/*  The following constants represent the possible contents of a square
-          on the board.  The constants RED and BLACK also represent players
-          in the game. */
-
-      // static final int
-                // EMPTY = 0,
-                // RED = 1,
-                // RED_KING = 2,
-                // BLACK = 3,
-                // BLACK_KING = 4;
-      
-      
-      int[][] board;  // board[r][c] is the contents of row r, column c.  
-      
-      
-      /**
-       * Constructor.  Create the board and set it up for a new game.
-       */
-      CheckersData() {
-         board = new int[8][8];
-         setUpGame();
-      }
-      
-      
-      /**
-       * Set up the board with checkers in position for the beginning
-       * of a game.  Note that checkers can only be found in squares
-       * that satisfy  row % 2 == col % 2.  At the start of the game,
-       * all such squares in the first three rows contain black squares
-       * and all such squares in the last three rows contain red squares.
-       */
-      void setUpGame() {
-         for (int row = 0; row < 8; row++) {
-            for (int col = 0; col < 8; col++) {
-               if ( row % 2 == col % 2 ) {
-                  if (row < 3)
-                     board[row][col] = BLACK;
-                  else if (row > 4)
-                     board[row][col] = RED;
-                  else
-                     board[row][col] = EMPTY;
-               }
-               else {
-                  board[row][col] = EMPTY;
-               }
-            }
-         }
-      }  // end setUpGame()
-      
-      
-      /**
-       * Return the contents of the square in the specified row and column.
-       */
-      int pieceAt(int row, int col) {
-         return board[row][col];
-      }
-      
-      /**
-       * Set the contents of the square in the specified row and column.
-       * piece must be one of the constants EMPTY, RED, BLACK, RED_KING,
-       * BLACK_KING.
-       */
-      void setPieceAt(int row, int col, int piece) {
-         board[row][col] = piece;
-      }
-	
 	
 	/**
 	//?????
@@ -207,9 +136,6 @@ public class CheckerPiece {
 	}
 	
 	**/
-	
-	
-	
 	
 	
 	
