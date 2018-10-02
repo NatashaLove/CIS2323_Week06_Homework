@@ -17,9 +17,11 @@ public class Board {
 	// ArrayList<ChessPiece> pieces = new ArrayList<ChessPiece>(32); //create 32 pieces, 16 for both players
 	//Piece piece = new Piece();
 	//Enum for the pieces in the game
-	enum Piece{
-		EMPTY, RED, RED_KING, BLACK, BLACK_KING, OUTSIDE
-	}
+	// enum Piece{
+		// EMPTY, RED, RED_KING, BLACK, BLACK_KING, OUTSIDE
+	// }
+	
+//	CheckerPiece piece;
 	
 	// // Default constructor.
 	public Board() {

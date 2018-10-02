@@ -18,6 +18,7 @@ public class CheckerPiece {
 	
 	// Default constructor.
 	public CheckerPiece() {
+		Piece piece;
 	}
 
 	// CheckerPiece checker;
