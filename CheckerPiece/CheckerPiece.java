@@ -18,17 +18,21 @@ public class CheckerPiece {
 	
 	// Default constructor.
 	public CheckerPiece() {
-		Piece piece;
+		//Piece piece;
+		
+		 for(Piece piece : Piece.values()){
+		 System.out.println(chckpc+" ");
+		
+		}
 	}
 
 	// CheckerPiece checker;
 	// checker=CheckerPiece.WHITE;
 	// checker=CheckerPiece.BLACK;
 	
-	// for(CheckerPiece chckpc : CheckerPiece.values()){
-		// System.out.println(chckpc+" ");
-		
-	// }
+	
+	
+	
 	
 	//Used to represent the data of the board
 	
