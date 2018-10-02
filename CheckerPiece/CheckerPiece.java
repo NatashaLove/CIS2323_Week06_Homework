@@ -33,7 +33,7 @@ public class CheckerPiece {
 	// }
 	
 	//Used to represent the data of the board
-	private class Board implements Cloneable{
+	
 		/*
 		 * A 2D array representation of the board
 		 * The inner array is the x position
