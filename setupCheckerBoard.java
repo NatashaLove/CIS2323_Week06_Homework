@@ -7,15 +7,15 @@ public class  setupCheckerBoard {
 	
 	public static void main (String [] args) {
 	
-		CheckerBoard myBoard = new CheckerBoard();
+		Board myBoard = new Board();
 		
 		
 		
 
 
 		//Prints out the board
-			public void printBoard(){
-				board.printBoard();
-		}
+			
+		myBoard.printBoard();
+		
 	}
 }

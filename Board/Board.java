@@ -12,12 +12,27 @@ public class Board {
 	private int column; 
 	private int row;
 	Board[][] board = new Board[8][8]; 
+	
 	// ChessPiece[][] board = new ChessPiece[8][8];
 	// ArrayList<ChessPiece> pieces = new ArrayList<ChessPiece>(32); //create 32 pieces, 16 for both players
+	//Piece piece = new Piece();
+	//Enum for the pieces in the game
+	enum Piece{
+		EMPTY, RED, RED_KING, BLACK, BLACK_KING, OUTSIDE
+	}
 	
 	// // Default constructor.
 	public Board() {
 	}
+	
+	//Clone constructor
+		public Board(Board inBoard){
+			for (int x = 0; x < 8; x++){
+				for (int y = 0; y < 8; y++){
+					board[x][y] = inBoard.getPiece(x, y);
+				}
+			}
+}
 	
 	// // Constructor.
 	// public ChessBoard() {
