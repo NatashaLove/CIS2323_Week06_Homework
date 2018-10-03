@@ -4,13 +4,19 @@ import java.util.*;
 
 public class CheckerPiece {
 	
+	//CheckerPiece[][] board = new CheckerPiece[8][8]; = массив 8х8 - шахматная доска 64 клетки- элементы массива - клетки доски, в которых есть (или нет) фигуры
+	//как проверить клетку в i-й строке, j-й колонке? CheckerPiece cp = board[i][j]; 
+	//как поставить шашку в i-ю строку, j-ю колонку? board[i][j] = cp;
+	
+	
+	enum CheckerPiece{RED, BLACK};
+	//!!а ПУСТО - это когда в ячейке массива board нет ничего, т.е. : board[i][j] == null
+
 	
 	//Enum for the pieces in the game
-	enum Piece{
-		EMPTY, RED, RED_KING, BLACK, BLACK_KING, OUTSIDE
-	}
-	//enum CheckerPiece{WHITE, BLACK};
-	
+	// enum Piece{
+		// EMPTY, RED, RED_KING, BLACK, BLACK_KING, OUTSIDE
+	// }
 	// ChessBoard[][] board = new ChessBoard[8][8]; //to show game status in text based version
 	// CheckerPiece[][] board = new CheckerPiece[8][8];
 	// ArrayList<CheckerPiece> pieces = new ArrayList<CheckerPiece>(32); //create 32 pieces, 16 for both players
