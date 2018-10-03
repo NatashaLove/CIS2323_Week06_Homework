@@ -33,7 +33,7 @@ public class CheckerPiece {
 	}
 
 	// CheckerPiece checker;
-	// checker=CheckerPiece.WHITE;
+	// checker=CheckerPiece.RED;
 	// checker=CheckerPiece.BLACK;
 	
 	

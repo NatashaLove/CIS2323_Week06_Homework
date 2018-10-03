@@ -11,7 +11,12 @@ public class Board {
 	// row and column for position on the board
 	private int column; 
 	private int row;
-	Board[][] board = new Board[8][8]; 
+	
+	//CheckerPiece[][] board = new CheckerPiece[8][8]; = массив 8х8 - шахматная доска 64 клетки- элементы массива - клетки доски, в которых есть (или нет) фигуры
+	CheckerPiece[][] board = new CheckerPiece[8][8];
+
+	//как проверить клетку в i-й строке, j-й колонке? CheckerPiece cp = board[i][j]; 
+	//как поставить шашку в i-ю строку, j-ю колонку? board[i][j] = cp;	
 	
 	// ChessPiece[][] board = new ChessPiece[8][8];
 	// ArrayList<ChessPiece> pieces = new ArrayList<ChessPiece>(32); //create 32 pieces, 16 for both players
@@ -22,7 +27,8 @@ public class Board {
 	// }
 	
 //	CheckerPiece piece;
-	
+
+
 	// // Default constructor.
 	public Board() {
 	}
@@ -34,13 +40,19 @@ public class Board {
 					board[x][y] = inBoard.getPiece(x, y);
 				}
 			}
-}
+		}
 	
 	// // Constructor.
 	// public ChessBoard() {
 		// initBoard(); //places pieces on the board 
 	// }
-	
+
+
+		
+		// CheckerPiece checker;
+	// checker=CheckerPiece.RED;
+	// checker=CheckerPiece.BLACK;
+		
 	/*
 	 Shows the current game state which is 8x8 board with pieces on it.
 	 Shows notation on each side.
@@ -51,9 +63,10 @@ public class Board {
 		for (int y = 7; y >= 0 ; y--){
 			System.out.print("" + y + " ");
 			for (int x = 0; x < 8; x++){
-				if (board[x][y] == Piece.RED_KING) System.out.print("R ");
-				else if (board[x][y] == Piece.BLACK_KING) System.out.print("B ");
-				else if (board[x][y] == Piece.RED) System.out.print("r ");
+				//if (board[x][y] == Piece.RED_KING) System.out.print("R ");
+				//else if (board[x][y] == Piece.BLACK_KING) System.out.print("B ");
+				//else 
+				if (board[x][y] == Piece.RED) System.out.print("r ");
 				else if (board[x][y] == Piece.BLACK) System.out.print("b ");
 				else System.out.print("  ");
 			}
